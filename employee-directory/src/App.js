@@ -8,7 +8,10 @@ function App() {
   return (
     <div className="App">
       <Container>
-
+        <p>
+          // instructions to search by name 
+          //link to employee page 
+        </p>
       </Container>
     </div>
   );
