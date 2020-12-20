@@ -10,8 +10,10 @@ function App() {
       <Container>
         <p>
           // instructions to search by name 
-          //link to employee page 
+           
         </p>
+          <Employee />
+          //render to show employee.js
       </Container>
     </div>
   );
