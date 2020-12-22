@@ -1,5 +1,6 @@
 import React from "react";
-
+import API from "../utils/API";
+import SearchInput from "../components/SearchInput";
 
 class Component {
 
