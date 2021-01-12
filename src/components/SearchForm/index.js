@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-function SearchInput(props) {
+function SearchForm(props) {
     return (
         <div className="search">
             <input 
@@ -16,4 +16,4 @@ function SearchInput(props) {
     )
 }
 
-export default SearchInput;
+export default SearchForm;
