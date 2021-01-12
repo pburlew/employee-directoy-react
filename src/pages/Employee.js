@@ -52,20 +52,38 @@ handleFormSubmit = (event) => {
 };
 
 handleSortClick = (key) => {
-  // let nameArray = [];
-  // let map = this.state.employees.map(x => x.name)
-  // nameArray.push(map);
-  // console.log(map);
-  this.setState({
-    employees: this.state.employees.sort((a, b) => {
-      const asc = this.state.employees.name;
-      if (a.state.employees[key].name < b.state.employees[key].name) {
-        return asc ? -1 : 1;
-      } else if (a.state.employees[key].name > b.state.employees[key].name) {
-        return asc ? 1 : -1;
-      } else {
-        return 0;
-      }
-    }),
-  });
-};
+		// let nameArray = [];
+		// let map = this.state.employees.map(x => x.name)
+		// nameArray.push(map);
+		// console.log(map);
+		this.setState({
+			employees: this.state.employees.sort((a, b) => {
+				const asc = this.state.employees.name;
+				if (a.state.employees[key].name < b.state.employees[key].name) {
+					return asc ? -1 : 1;
+				} else if (a.state.employees[key].name > b.state.employees[key].name) {
+					return asc ? 1 : -1;
+				} else {
+					return 0;
+				}
+			}),
+		});
+  };
+  
+
+  // render
+	render() {
+		return (
+			<div>
+				<SearchForm
+					employees={this.state.employees}
+					handleFormSubmit={this.handleFormSubmit}
+					handleInputChange={this.handleInputChange}
+				/>
+				<TableBody employees={this.state.employees} />
+			</div>
+		);
+	}
+}
+
+export default Employee;
