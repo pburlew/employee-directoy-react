@@ -9,9 +9,12 @@ function App() {
   return (
     <div className="App">
       <Container>
-        <p>
+        
           // instructions to search by name 
-           
+          <p className="heading">
+					Type in a name to activate <code>search by name</code>. You can also
+					click on any table heading to <code>sort by that category</code>.
+				
         </p>
           <Employee />
           //render to show employee.js
